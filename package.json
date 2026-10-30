@@ -1,0 +1,23 @@
+{
+  "name": "roshani-traders",
+  "version": "1.0.0",
+  "description": "Roshani Traders - Three Wheeler Auto Parts Wholesale Management System",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "node server/database/init_db.js",
+    "db": "node server/database/init_db.js",
+    "test": "node server/test_mysql_integration.js",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "puppeteer": "^25.10.0",
+    "sharp": "^0.35.5"
+  }
+}

@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+.pnp
+.pnp.js
+
+# Environment Variables & Secrets (CRITICAL)
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+client/.env
+client/.env.*
+!client/.env.example
+
+# Production & Build Outputs
+dist/
+build/
+client/dist/
+client/build/
+out/
+.next/
+
+# Testing & Coverage
+coverage/
+*.lcov
+test_results.json
+
+# IDE & Operating System Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+ehthumbs.db
+DumpStack.log
+
+# Logs & Temporary Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.system_generated/
+scratch/
+Jutt/
+.tempmediaStorage/
+*.tmp
+*.bak
